@@ -453,6 +453,7 @@ typedef struct meow_state
     meow_u64 TotalLengthInBytes;
     
     int unsigned BufferLen;
+    int unsigned Padding;
     
     meow_u8 Buffer[256];
     meow_u128 Pad[2]; // NOTE(casey): So we know we can over-read Buffer as necessary
